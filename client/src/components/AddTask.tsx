@@ -40,7 +40,7 @@ export default function AddTask({ taskToEdit, clearEditTask, setError }: AddTask
             dispatch(addTask({ ...task, id: Date.now(), name: nameTask }));
         }
         setNameTask("");
-        setError(""); // Clear any previous error
+        setError(""); 
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
